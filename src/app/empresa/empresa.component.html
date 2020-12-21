@@ -1,0 +1,33 @@
+<div class="example-container">
+    <mat-card mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Pesquisar Empresa</mat-card-title>
+        </mat-card-header>
+          <!-- <div *ngIf="cnpj.errors.required && submitted">
+            <b  style="color: red;"> CNPJ é obrigatório. </b>
+          </div> -->
+
+        <input matInput placeholder="CNPJ" type="text" maxlength="15" [(ngModel)]="cnpj">
+
+
+        <div class="example-button-row">
+            <button mat-button color="primary" (click)="findEmpresa()">Pesquisar</button>
+        </div>
+
+<pre>Endereço Retornado: <br>{{ retornoEndereco ? retornoEndereco.endereco : 'Endereço não encontrado' }}</pre>
+   </mat-card>
+
+   <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>Calcula Média</mat-card-title>
+      </mat-card-header>
+          <input matInput placeholder="Numero A" type="number" [(ngModel)]="numero1" >
+          <input matInput placeholder="Numero B" type="number" [(ngModel)]="numero2" >
+
+    <div class="example-button-row">
+          <button mat-button color="primary" (click)="media()">Calcular</button>
+    </div>
+
+    <pre>A média dos valores acima é: {{ retornoMedia ? retornoMedia.media : 'Ocorreu um problema no cálculo' }}</pre>
+  </mat-card>
+  </div>

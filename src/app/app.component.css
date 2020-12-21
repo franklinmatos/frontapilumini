@@ -1,0 +1,28 @@
+.context{
+  margin-left: 18px;
+}
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 18px;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+}
+
+.example-container > * {
+  width: 100%;
+}
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+
+.example-card {
+  margin-top: 2em;
+  max-width: 400px;
+}
